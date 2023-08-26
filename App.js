@@ -90,6 +90,7 @@ class App extends Component
         <div className="buttons">
           <button onClick={this.calculate}>=</button>
           <button onClick={this.clearInput}>C</button>
+          <button onClick={() => this.addToInput('0')}>0</button>
           <button onClick={() => this.addToInput('1')}>1</button>
           <button onClick={() => this.addToInput('2')}>2</button>
           <button onClick={() => this.addToInput('3')}>3</button>
@@ -102,7 +103,6 @@ class App extends Component
           <button onClick={() => this.addToInput('+')}>+</button>
           <button onClick={() => this.addToInput('-')}>-</button>
           <button onClick={() => this.addToInput('*')}>*</button>
-          <button onClick={() => this.addToInput('0')}>0</button>
           <button onClick={() => this.addToInput('.')}>.</button>
           <button onClick={() => this.addToInput('/')}>/</button>
           <button onClick={() => this.addToInput('√')}>√</button>
